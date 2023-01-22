@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: linear-gradient(to right bottom, #000, #111,
             #222, #333, #444, #555, #666, #777);
     font-family: sans-serif;

@@ -13,7 +13,12 @@
     <div class="phone">
         <div class="sides lateral left-side"></div>
         <div class="sides lateral right-side">
-            <div class="power-button"></div>
+            <div class="power-button">
+                <div class="power-button__sides power-button--upper"></div>
+                <div class="power-button__sides power-button--lower"></div>
+                <div class="power-button__sides power-button--top"></div>
+                <div class="power-button__sides power-button--down"></div>
+            </div>
         </div>
         <div class="sides upper-lower top-side"></div>
         <div class="sides upper-lower bottom-side"></div>
@@ -25,21 +30,7 @@
         </div>
         <div class="sides main-parts rear-side"></div>
     </div>
-    <script>
-        let Screen = document.querySelector('.screen');
-        var bool = true;
-        function changeBg() {
-            if (bool == true) {
-                Screen.style.background = 'url(./screen-bg.jpg) 50% center / 100% no-repeat';
-                bool = false;
-            }
-            else {
-                Screen.style.background = '#000';
-                bool = true;
-            }
-        }
-    </script>
-    <!-- <script src="./js/app.js"></script> -->
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

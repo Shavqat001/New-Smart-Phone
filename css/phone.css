@@ -2,19 +2,18 @@
     width: 320px;
     height: 600px;
     transform-style: preserve-3d;
-    transform: rotate(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
     animation: rotation 5s infinite linear;
 }
 
-@keyframes rotation {
+/* @keyframes rotation {
     100% {
-        transform: rotate(360deg) rotateY(-360deg) rotateZ(-360deg);
+        transform: rotateX(0deg) rotateY(360deg);
     }
-}
+} */
 
 .sides {
-    background-color: #123;
-    box-shadow: inset 0 0 1px #ddd;
+    background-color: #ddd;
     position: absolute;
 }
 
@@ -29,6 +28,7 @@
 
 .right-side {
     transform: rotateY(90deg) translateZ(310px);
+    transform-style: preserve-3d;
 }
 
 .upper-lower {
@@ -53,6 +53,7 @@
     transform: translateZ(10px);
     display: flex;
     flex-direction: column;
+    box-shadow: inset 0 0 10px #3337;
 }
 
 .rear-side {
