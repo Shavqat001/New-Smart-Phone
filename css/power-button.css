@@ -8,10 +8,12 @@
     transform-style: preserve-3d;
     cursor: pointer;
 }
+
 .power-button__sides {
     position: absolute;
     background-color: inherit;
 }
+
 .power-button--upper,
 .power-button--lower {
     width: 100%;
@@ -35,6 +37,12 @@
 .power-button--top {
     transform: rotateX(90deg) translateY(-3px) translateZ(2.2px)
 }
+
 .power-button--down {
     transform: rotateX(90deg) translateY(-2.5px) translateZ(-47.6px);
+}
+
+.BG {
+    background: url('../images/screen-bg.jpg') 50%;
+    background-size: 100%;
 }

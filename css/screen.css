@@ -1,9 +1,22 @@
 .screen {
-    width: 310px;
-    height: 540px;
+    width: 250px;
+    height: 100%;
     background: #000;
     margin: 5px auto;
     margin-bottom: 10px;
+    padding: 30px;
+    column-gap: 35px;
+    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.password-buttons {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
 .main-button {
@@ -25,4 +38,23 @@
     border: 1px solid #222;
     opacity: 0.8;
     border-radius: 5px;
+}
+
+.screen>input, .password-buttons>* {
+    font-size: 25px;
+}
+
+.screen>input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.screen>input {
+    margin-top: 80px;
+}
+
+.password-buttons>button {
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #000;
 }
