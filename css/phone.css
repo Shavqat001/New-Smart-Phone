@@ -4,7 +4,8 @@
     transform-style: preserve-3d;
     transform: rotateX(0deg) rotateY(0deg);
     animation: rotation 5s infinite linear;
-    transition: 300ms;
+    transition: 400ms;
+    transition-timing-function: ease-out;
 }
 
 .sides {
@@ -59,5 +60,5 @@
 }
 
 .rote {
-    transform: rotateY(180deg);
+    transform: rotate(90deg) rotateY(180deg);
 }
