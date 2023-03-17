@@ -17,15 +17,14 @@
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+    column-gap: 30px;
 }
 
 .main-button {
     width: 50px;
-    height: 50px;
+    height: 60px;
     border-radius: 50%;
     box-shadow: inset -2px -2px 3px #ddd, inset 2px 2px 3px #111;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -50,6 +49,14 @@
 
 .screen>input {
     margin-top: 80px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 5px 20px 5px 20px;
+    letter-spacing: 50px;
+    border-bottom: 3px solid #fff;
+    box-shadow: 3px 0 5px #444;
+    outline: none;
+    border-radius: 10px;
 }
 
 .password-buttons>button {
@@ -57,4 +64,8 @@
     border: none;
     background-color: rgba(255, 255, 255, 0.3);
     border: 1px solid #000;
+}
+
+.unvisible>* {
+    display: none;
 }
