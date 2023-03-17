@@ -14,6 +14,11 @@ currentTime.className = 'time';
 
 onOff.onclick = () => {
     let time = today.getHours() + ' : ' + today.getMinutes();
+    for (let i = 0; i <= 9; i++) {
+        if (today.getMinutes() == i) {
+            time = today.getHours() + ' : ' + today.getMinutes() + '0';
+        }
+    }
     currentTime.textContent = time;
 
     screen.prepend(currentTime);
