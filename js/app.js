@@ -25,10 +25,6 @@ onOff.onclick = () => {
     screen.classList.toggle('change-bg');
     screen.classList.toggle('unvisible');
     screen.classList.toggle('black-bg');
-    const screenChildren = document.querySelectorAll('.screen>*');
-    for (let i = 0; i < screenChildren.length; i++) {
-        screenChildren[i].style.visibility = 'visible';
-    }
 }
 
 for (let i = 0; i < passwordBtn.length; i++) {
@@ -40,7 +36,7 @@ okButton.onclick = () => {
     if (passwordField.value == 2807) {
         const screenChildren = document.querySelectorAll('.screen>*');
         for (let i = 0; i < screenChildren.length; i++) {
-            screenChildren[i].style.visibility = 'hidden';
+            screenChildren[i].style.display = 'none';
         }
         screen.classList.toggle('screen-bg');
 
