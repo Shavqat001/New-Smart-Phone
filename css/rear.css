@@ -1,0 +1,30 @@
+.rear-side {
+    transform: translateZ(-10px);
+    background: url('../images/bg.jpg') 50% no-repeat;
+    background-size: 300%;
+}
+
+.camera {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #000, #444);
+    margin-left: 30px;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px #ddd, -2px -2px 6px #444;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.fingerprint {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #333;
+    box-shadow: inset 3px 3px 3px #ddd, inset -3px -3px 3px #777;
+    margin: 200px auto;
+    z-index: -1;
+}

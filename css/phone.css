@@ -9,7 +9,7 @@
 }
 
 .sides {
-    background-color: #ddd;
+    background: var(--phone-linear-color);
     position: absolute;
 }
 
@@ -45,20 +45,28 @@
     height: 100%;
 }
 
-.front-side {
-    transform: translateZ(10px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: inset 0 0 10px #3337;
-}
-
-.rear-side {
-    transform: translateZ(-10px);
-    background: url('../images/bg.jpg') 50% no-repeat;
-    background-size: 300%;
-}
-
 .rote {
     transform: rotate(90deg) rotateY(180deg);
+}
+
+.rotate-btn {
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    background: linear-gradient(90deg, mediumslateblue, transparent);
+    background-size: 200px;
+    background-position: 200px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.rotate-btn:hover {
+    transition: 500ms;
+    background-position: 0px;
 }
