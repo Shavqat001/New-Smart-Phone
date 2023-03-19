@@ -22,8 +22,13 @@ onOff.onclick = () => {
     currentTime.textContent = time;
 
     screen.prepend(currentTime);
-    screen.classList.toggle('BG');
+    screen.classList.toggle('change-bg');
     screen.classList.toggle('unvisible');
+    screen.classList.toggle('black-bg');
+    const screenChildren = document.querySelectorAll('.screen>*');
+    for (let i = 0; i < screenChildren.length; i++) {
+        screenChildren[i].style.visibility = 'visible';
+    }
 }
 
 for (let i = 0; i < passwordBtn.length; i++) {
@@ -33,21 +38,40 @@ for (let i = 0; i < passwordBtn.length; i++) {
 }
 okButton.onclick = () => {
     if (passwordField.value == 2807) {
-        alert('Correct!');
+        const screenChildren = document.querySelectorAll('.screen>*');
+        for (let i = 0; i < screenChildren.length; i++) {
+            screenChildren[i].style.visibility = 'hidden';
+        }
+        screen.classList.toggle('screen-bg');
+
+        let blockSound = document.createElement('audio');
+        blockSound.src = './sounds/block.mp3';
+        blockSound.autoplay = true;
+        blockSound.play();
+        document.body.append(blockSound);
+        setTimeout(() => {
+            blockSound.remove();
+        }, 500);
     } else if (passwordField.value == '') {
         alert('Write the password');
     } else {
         alert('Wrong password!');
     }
     passwordField.value = '';
-    passwordBtn
 }
 
 clearButton.onclick = () => {
     passwordField.value = '';
 }
 
-
 rotateButton.onclick = () => {
     phone.classList.toggle('rote');
+    let rotationSound = document.createElement('audio');
+    rotationSound.src = './sounds/fiew.mp3';
+    rotationSound.autoplay = true;
+    rotationSound.play();
+    document.body.append(rotationSound);
+    setTimeout(() => {
+        rotationSound.remove();
+    }, 500);
 }

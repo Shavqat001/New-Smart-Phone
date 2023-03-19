@@ -42,7 +42,15 @@
     transform: rotateX(90deg) translateY(-2.5px) translateZ(-47.6px);
 }
 
-.BG {
+.change-bg {
+    background: url('../images/dog.jpg') 50%;
+    background-size: 115%;
+}
+
+.screen-bg {
     background: url('../images/screen-bg.jpg') 50%;
     background-size: 100%;
+}
+.black-bg {
+    background: #000;
 }

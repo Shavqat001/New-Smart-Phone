@@ -1,5 +1,5 @@
 :root {
-    --phone-color: #444;
+    --phone-color: #555;
     --phone-linear-color: linear-gradient(0deg, #000 89%, #555 10%);
-    --phone-linear-color-180: linear-gradient(180deg, #000, #455);
+    --phone-linear-color-180: linear-gradient(180deg, #000 50%, #455);
 }

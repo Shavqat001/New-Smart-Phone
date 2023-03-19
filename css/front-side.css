@@ -23,8 +23,8 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    transition: 250ms;
     text-align: center;
+    transition: 250ms;
     border-radius: 10px 10px 0 0;
 }
 
