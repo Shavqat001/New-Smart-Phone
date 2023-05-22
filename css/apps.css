@@ -1,0 +1,143 @@
+.apps {
+    width: 100%;
+    height: 250px;
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.app {
+    background: linear-gradient(45deg, tomato, #fff);
+    border-radius: 10px;
+    transition: 180ms;
+}
+
+.app:first-child {
+    background: url('../images/apps/calendar.png') 50% / 100% no-repeat;
+}
+
+.app:nth-child(2) {
+    background: url('../images/apps/camera.png')50% / 100% no-repeat;
+}
+
+.app:nth-child(3) {
+    background: url('../images/apps/clock.png') 50% / 100% no-repeat;
+}
+
+.app:nth-child(4) {
+    background: url('../images/apps/code.png') 50% / 100% no-repeat;
+}
+
+.app:nth-child(5) {
+    background: url('../images/apps/facebook.png') 50% / 100% no-repeat;
+}
+
+.app:nth-child(6) {
+    background: url('../images/apps/twitter.png') 50% / 100% no-repeat;
+}
+
+.app:nth-child(7) {
+    background: url('../images/apps/instagram.png') 50% / 100% no-repeat;
+}
+
+.app:nth-child(8) {
+    background: url('../images/apps/map.png') 50% / 100% no-repeat;
+}
+
+.app:nth-child(9) {
+    background: url('../images/apps/music-store-app.png') 50% / 100% no-repeat;
+}
+
+.app:nth-child(10) {
+    background: url('../images/apps/settings.png') 50% / 100% no-repeat;
+}
+
+.app:nth-child(11) {
+    background: url('../images/apps/telegram.png') 50% / 100% no-repeat;
+}
+
+.app:nth-child(12) {
+    background: url('../images/apps/youtube.png') 50% / 100% no-repeat;
+}
+
+.app:hover {
+    opacity: 0.9;
+    background-size: 115%;
+    box-shadow: 0 0 3px #fff;
+}
+
+.apps__bottom-side {
+    border-top: 1px solid #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.apps__main-button {
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.apps__main-button div {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.apps__main-button div:first-child {
+    padding-top: 7px;
+}
+
+.apps__main-button div:last-child {
+    padding-bottom: 7px;
+}
+
+.apps__main-button div span {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.bottom-side-icons {
+    width: 35px;
+    height: 35px;
+    transition: 200ms;
+}
+
+.bottom-side-icons:nth-of-type(1) {
+    background: url('../images/apps/chatting.png') 50% / 100% no-repeat;
+}
+
+.bottom-side-icons:nth-of-type(2) {
+    background: url('../images/apps/phone.png') 50% / 100% no-repeat;
+}
+
+.bottom-side-icons:nth-of-type(3) {
+    background: url('../images/apps/folder.png') 50% / 100% no-repeat;
+}
+
+.bottom-side-icons:nth-of-type(4) {
+    background: url('../images/apps/gallery.png') 50% / 100% no-repeat;
+}
+
+.bottom-side-icons:hover {
+    opacity: 0.9;
+    background-size: 115%;
+    box-shadow: 0 0 3px #fff;
+}
