@@ -29,6 +29,9 @@ onOff.onclick = () => {
 
     if (bool === true) {
         currentTime.style.display = 'block';
+        currentTime.style.marginBottom = '20px';
+        currentTime.style.color = '#333';
+
         screen.style.background = 'url(./images/dog.jpg) 50% / 120%';
 
         passwordBtns.style.display = 'grid';
@@ -83,6 +86,8 @@ okButton.onclick = () => {
         screen.style.background = 'url("./images/screen-bg.jpg") 50% / 100%';
         currentTime.style.display = 'flex';
         currentTime.style.marginBottom = '100px';
+        currentTime.style.color = '#fff';
+        currentTime.style.textShadow = 'none';
         apps.style.display = 'grid';
 
     } else if (passwordField.value == '') {
